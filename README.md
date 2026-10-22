@@ -1,34 +1,33 @@
-# Legends of Ynov
+<div align="center">
 
-> A medieval-fantasy role-playing game played entirely in the terminal, written in Go: story chapters, character classes, turn-based combat, a merchant, a blacksmith and an inventory.
+<img src="./.github/banner.svg" alt="Legends of Ynov" width="100%">
 
-![Go](https://img.shields.io/badge/Go-1.16+-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Type](https://img.shields.io/badge/type-CLI%20RPG-38f0c0?style=flat-square)
+**A medieval-fantasy role-playing game played entirely in the terminal, written in Go: story chapters, character classes, turn-based combat, a merchant, a blacksmith and an inventory.**
 
----
+![Go](https://img.shields.io/badge/Go-1.16+-00ADD8?style=flat-square&logo=go&logoColor=white) ![Type](https://img.shields.io/badge/type-CLI%20RPG-38f0c0?style=flat-square)
 
-## Table of contents
+[Overview](#-overview) · [Features](#-features) · [Getting started](#-getting-started) · [Tech stack](#-tech-stack)
 
-- [Overview](#overview)
-- [Team](#team)
-- [Features](#features)
-- [Getting started](#getting-started)
-- [Project structure](#project-structure)
-- [Documentation](#documentation)
-- [Tech stack](#tech-stack)
+</div>
 
-## Overview
+## 📖 Overview
 
 *Legends of Ynov* ("RED project") is a text adventure where your choices matter. It was built as a two-person project for a Go programming module and combines a game engine, ASCII art and coloured terminal menus.
 
-## Team
+## 👥 Team
 
 | Contributor | Role |
 |---|---|
 | **Konaté Adama** | Frontend / UI — menus, sub-menus, user input handling, ANSI-coloured terminal output |
 | **Aurélie** | Backend / game logic — data structures, combat, inventory, merchant, forge, persistence of player data |
 
-## Features
+## ✨ Features
+
+```mermaid
+flowchart LR
+    A["Character creation"] --> Q1["Quest 1<br/>The village"] --> Q2["Quest 2<br/>The forest"] --> Q3["Quest 3<br/>The fortress"]
+    Q1 & Q2 & Q3 -.-> S["Systems<br/>combat · merchant · blacksmith · inventory"]
+```
 
 - **Narration and chapters** — a quest-driven story with ASCII-art illustrations.
 - **Character creation** — pick a name and a class (Human, Elf or Dwarf) that sets your base statistics.
@@ -39,7 +38,7 @@
   - **Blacksmith** — craft equipment from collected resources to improve your stats.
 - **Inventory** — a limited inventory for items, potions and equipment.
 
-## Getting started
+## 🚀 Getting started
 
 **Prerequisite:** Go 1.16 or newer.
 
@@ -51,7 +50,7 @@ go run main.go
 
 The game starts directly in your terminal. Good luck, adventurer!
 
-## Project structure
+## 🗂️ Project structure
 
 ```text
 main.go              CLI entry point
@@ -62,14 +61,18 @@ src/systemes.go      Inventory, merchant and blacksmith
 docs/                Project-management notes
 ```
 
-## Documentation
+## 📚 Documentation
 
 The task split, planning and technical choices are described in [`docs/gestion_projet.md`](docs/gestion_projet.md) (written in French).
 
-## Tech stack
+## 🧰 Tech stack
 
 Go · Command-line interface · ANSI colours
 
 ---
 
-**Author** — Konaté Adama · [github.com/DaskoStudio](https://github.com/DaskoStudio)
+<div align="center">
+
+<sub>Built by <a href="https://github.com/DaskoStudio"><b>Konaté Adama</b></a> · <a href="https://github.com/DaskoStudio?tab=repositories">More projects</a></sub>
+
+</div>
