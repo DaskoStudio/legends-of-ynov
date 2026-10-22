@@ -1,53 +1,75 @@
-# 🛡️ Projet RED - Legends of Ynov
+# Legends of Ynov
 
-Bienvenue dans **Legends of Ynov**, un jeu de rôle (RPG) médiéval-fantastique en ligne de commande (CLI), développé avec le langage Go dans le cadre du module de programmation à Ynov Campus.
+> A medieval-fantasy role-playing game played entirely in the terminal, written in Go: story chapters, character classes, turn-based combat, a merchant, a blacksmith and an inventory.
 
-## 👥 Auteurs
+![Go](https://img.shields.io/badge/Go-1.16+-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Type](https://img.shields.io/badge/type-CLI%20RPG-38f0c0?style=flat-square)
 
-- **Frontend / UI** : ADAMA DEZE KONATE
-- **Backend / Logique** : Aurélie
+---
 
-## ✨ Fonctionnalités
+## Table of contents
 
-Plongez dans une aventure textuelle où vos choix comptent. Le jeu inclut :
+- [Overview](#overview)
+- [Team](#team)
+- [Features](#features)
+- [Getting started](#getting-started)
+- [Project structure](#project-structure)
+- [Documentation](#documentation)
+- [Tech stack](#tech-stack)
 
--   **Narration et Chapitres** : Vivez une histoire immersive avec une progression par quêtes et de superbes illustrations en ASCII Art.
--   **Création de Personnage** : Choisissez un nom et une classe (Humain, Elfe, Nain) pour définir les statistiques de base de votre héros.
--   **Système de Combat** : Affrontez des monstres dans des combats stratégiques au tour par tour. Utilisez des attaques physiques, des sorts et méfiez-vous des coups critiques !
--   **Économie & Artisanat** :
-    -   **Marchand** : Achetez des potions, des matériaux et de nouveaux sorts pour vous renforcer.
-    -   **Forgeron** : Fabriquez de puissants équipements pour améliorer vos statistiques à partir des ressources collectées.
--   **Gestion d'Inventaire** : Gérez un inventaire limité pour stocker vos objets, potions et équipements.
+## Overview
 
-## 🚀 Installation et Lancement
+*Legends of Ynov* ("RED project") is a text adventure where your choices matter. It was built as a two-person project for a Go programming module and combines a game engine, ASCII art and coloured terminal menus.
 
-Pour jouer à **Legends of Ynov**, assurez-vous d'avoir **Go** (version 1.16 ou supérieure) installé.
+## Team
 
-1.  Clonez ce dépôt sur votre machine locale :
-    ```bash
-    git clone https://github.com/DaskoStudio/legends-of-ynov.git
-    ```
+| Contributor | Role |
+|---|---|
+| **Konaté Adama** | Frontend / UI — menus, sub-menus, user input handling, ANSI-coloured terminal output |
+| **Aurélie** | Backend / game logic — data structures, combat, inventory, merchant, forge, persistence of player data |
 
-2.  Naviguez jusqu'à la racine du projet :
-    ```bash
-    cd legends-of-ynov
-    ```
+## Features
 
-3.  Exécutez la commande suivante pour lancer le jeu (géré via modules Go) :
-    ```bash
-    go run main.go
-    ```
+- **Narration and chapters** — a quest-driven story with ASCII-art illustrations.
+- **Character creation** — pick a name and a class (Human, Elf or Dwarf) that sets your base statistics.
+- **Three quests** — the village, the forest and the fortress, with training and encounters in between.
+- **Turn-based combat** — attacks and critical hits against monsters (goblins, wolves, trolls); experience and levelling.
+- **Economy and crafting**
+  - **Merchant** — buy potions, materials and new spells.
+  - **Blacksmith** — craft equipment from collected resources to improve your stats.
+- **Inventory** — a limited inventory for items, potions and equipment.
 
-Le jeu démarrera directement dans votre terminal. Bonne chance, aventurier !
+## Getting started
 
-## 👤 Auteur
+**Prerequisite:** Go 1.16 or newer.
 
-Konaté Adama (@DaskoStudio) — Ynov Campus
+```bash
+git clone https://github.com/DaskoStudio/legends-of-ynov.git
+cd legends-of-ynov
+go run main.go
+```
 
-## 🧱 Structure
+The game starts directly in your terminal. Good luck, adventurer!
 
-`main.go` : entrée CLI ; `src/` : sources ; `docs/` : documentation.
+## Project structure
 
-## 🛠️ Stack
+```text
+main.go              CLI entry point
+src/character.go     Characters, classes and monsters
+src/combat.go        Encounters and turn-based combat
+src/story.go         Banner, introduction and quests
+src/systemes.go      Inventory, merchant and blacksmith
+docs/                Project-management notes
+```
 
-Go · Interface en ligne de commande.
+## Documentation
+
+The task split, planning and technical choices are described in [`docs/gestion_projet.md`](docs/gestion_projet.md) (written in French).
+
+## Tech stack
+
+Go · Command-line interface · ANSI colours
+
+---
+
+**Author** — Konaté Adama · [github.com/DaskoStudio](https://github.com/DaskoStudio)
