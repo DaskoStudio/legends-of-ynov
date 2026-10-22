@@ -1,0 +1,11 @@
+# Binaires Go
+*.exe
+*.test
+*.out
+/legends-of-ynov
+bin/
+
+# OS / éditeur
+.DS_Store
+.idea/
+.vscode/
