@@ -7,7 +7,7 @@ Bienvenue dans **Legends of Ynov**, un jeu de rôle (RPG) médiéval-fantastique
 - **Frontend / UI** : ADAMA DEZE KONATE
 - **Backend / Logique** : Aurélie
 
-## � Fonctionnalités
+## ✨ Fonctionnalités
 
 Plongez dans une aventure textuelle où vos choix comptent. Le jeu inclut :
 
@@ -25,12 +25,12 @@ Pour jouer à **Legends of Ynov**, assurez-vous d'avoir **Go** (version 1.16 ou 
 
 1.  Clonez ce dépôt sur votre machine locale :
     ```bash
-    git clone <URL_DU_DEPOT>
+    git clone https://github.com/DaskoStudio/legends-of-ynov.git
     ```
 
 2.  Naviguez jusqu'à la racine du projet :
     ```bash
-    cd projet-A-Red-legends-of-ynov
+    cd legends-of-ynov
     ```
 
 3.  Exécutez la commande suivante pour lancer le jeu (géré via modules Go) :
@@ -39,3 +39,15 @@ Pour jouer à **Legends of Ynov**, assurez-vous d'avoir **Go** (version 1.16 ou 
     ```
 
 Le jeu démarrera directement dans votre terminal. Bonne chance, aventurier !
+
+## 👤 Auteur
+
+Konaté Adama (@DaskoStudio) — Ynov Campus
+
+## 🧱 Structure
+
+`main.go` : entrée CLI ; `src/` : sources ; `docs/` : documentation.
+
+## 🛠️ Stack
+
+Go · Interface en ligne de commande.
